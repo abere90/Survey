@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey-Layout</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bere Adrian">
+    <meta name="description" content="Survey-layout">
+    <meta name="keyword" content="Assignment 7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.google.com/specimen/Roboto?category=Sans+Serif" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <img src="assets/step-1.png">
+            <div class="title-wrapper">Notifications Survey</div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div>
+            <div>We're working on our notification system to make our product work better.</div>
+            <div>The survey consists in several questions and usually takes 5-7 minutes to complete.</div>
+        </div>    
+
+        <div class=>
+            <label for="emailInput">Enter your email:</label>
+        <input required class="input-validation" id="emailInput" type="email" placeholder="Your answer">
+        </div>
+
+        
+        <div class="first-q-wrapper">
+            <div>Are you an admin or a member on our Board?</div>
+            <form>
+                <input type="radio" id="question1-admin" name="tech" value="Admin">
+                <label for="question1-admin">Admin</label>
+            
+                <div></div>
+            
+                <input type="radio" id="question1-member" name="tech" value="Member">
+                <label for="question1-member">Member</label>
+            </form>
+        </div>  
+
+        <div class="collaborate-wrapper">
+            <div>How do you collaborate in our Board?</div>
+             <form class="page1-form">
+                <input type="radio" id="question2-answer1" name="tech2" value="Create and edit content">
+                <label for="question2-answer1">Create and edit content</label>
+            
+                <div></div>
+            
+                <input type="radio" id="question2-answer2" name="tech2" value="Comment and leave comment">
+                <label for="question2-answer2">Comment and leave comment</label>
+
+                <div></div>
+
+                <input type="radio" id="question2-answer3" name="tech2" value="Just review created comment">
+                <label for="question2-answer3">Just review created comment</label>
+
+            <div class="bottom-answer-wrapper">
+                <input type="radio" id="question2-answer4" name="tech" value="Other">
+                <label for="question2-answer4">Other:</label>
+                <input type="text" class="border-line">
+            </div>    
+        </form>
+        </div>
+    </div>
+
+    <div class="next-button-wrapper">
+        <div class="next-button">
+            <button class="button">
+                <a href="page2.html">NEXT</a>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
