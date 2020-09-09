@@ -12,6 +12,7 @@ html,body, .main-container{
 
 .main-container{
     position: relative;
+    /* puteai sa lasi height-ul wrapper-ului sa fie determinat de continut, nu sa il fixezi dinainte */
     height: 63%;
 }
 
@@ -51,7 +52,9 @@ img{
     align-items: flex-start;
     flex-direction: column;
     max-width: 50%;
-    margin-left: 25%;
+    /* este o tehnica mult mai dinamica de centrare orizontala */
+    margin: 0 auto;
+    /* margin-left: 25%; */
 }
 .main-container div, label, input{
     margin:11px 0px 10px 15px;
@@ -171,6 +174,7 @@ div.bottom-answer-wrapper{
     background-color:  rgb(55, 207, 123);
 }
 
+/* ai foarte mult cod repetitiv aici, poti sa adaugi o clasa comuna la acelasi nivel cu .img-level-1, .img-level-2, .img-level-3, de exemplu .general-img-wrapper si sa asignezi pe ea toate regulile comune, apoi separat, cum ai facut doar ce e specific, de exemplu background-image  */
 .img-level-1 div{
     width: 45px;
     height: 45px;

@@ -26,15 +26,18 @@
             <div>The survey consists in several questions and usually takes 5-7 minutes to complete.</div>
         </div>    
 
+        <!-- este o clasa lipsa aici? -->
         <div class=>
             <label for="emailInput">Enter your email:</label>
-        <input required class="input-validation" id="emailInput" type="email" placeholder="Your answer">
+            <input required class="input-validation" id="emailInput" type="email" placeholder="Your answer">
         </div>
 
         
         <div class="first-q-wrapper">
             <div>Are you an admin or a member on our Board?</div>
+            <!-- pe fiecare pagina trebuie sa ai doar un form element, nu unul pentru fiecare intrebare si trebuie sa includa si intrebarea pt email de mai sus. La un moment dat la click pe submit date tale vor fi trimise la server pentru prelucrare si vrei sa trimiti o singura data datele astea, nu de atatea ori cate intrebari ai, nu e eficient nici friendly. -->
             <form>
+                <!-- atributul name trebuie sa fie specific, tech nu are legatura cu ce intrebam nou aici. U exemplu mai potrivit era user_role -->
                 <input type="radio" id="question1-admin" name="tech" value="Admin">
                 <label for="question1-admin">Admin</label>
             
@@ -51,6 +54,7 @@
                 <input type="radio" id="question2-answer1" name="tech2" value="Create and edit content">
                 <label for="question2-answer1">Create and edit content</label>
             
+                <!-- empty div? daca nu avem nici un element decorativ, nu ar trebui sa avem elemente goale la noi in structura HTML -->
                 <div></div>
             
                 <input type="radio" id="question2-answer2" name="tech2" value="Comment and leave comment">
@@ -61,18 +65,20 @@
                 <input type="radio" id="question2-answer3" name="tech2" value="Just review created comment">
                 <label for="question2-answer3">Just review created comment</label>
 
-            <div class="bottom-answer-wrapper">
-                <input type="radio" id="question2-answer4" name="tech" value="Other">
-                <label for="question2-answer4">Other:</label>
-                <input type="text" class="border-line">
-            </div>    
+                <div class="bottom-answer-wrapper">
+                    <input type="radio" id="question2-answer4" name="tech" value="Other">
+                    <label for="question2-answer4">Other:</label>
+                    <input type="text" class="border-line">
+                </div>    
         </form>
         </div>
     </div>
 
     <div class="next-button-wrapper">
         <div class="next-button">
+            <!-- un element button cu o clasa button nu are mult sens. poti sa folosesti direct un selector de tip daca ai nevoie, iar daca ai nevoie de o clasa, e ok sa fie specifica. -->
             <button class="button">
+                <!-- button si a servesc pentru scopuri similare in layout. E de dorit sa alegi unul din ele. -->
                 <a href="page2.html">NEXT</a>
             </button>
         </div>
